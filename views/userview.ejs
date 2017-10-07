@@ -1,0 +1,25 @@
+<!-- views/userview.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>HTML5 boilerplate – all you really need…</title>
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body id="home">
+
+	<h1>EJS + Express Simple Example</h1>
+	<ul>
+		<%
+			data.forEach((person) => { %>
+			<li><b><%= person.getUserData() %></b></li>
+		<% });
+		%>
+	</ul>
+
+</body>
+</html>
